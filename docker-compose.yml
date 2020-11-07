@@ -1,0 +1,19 @@
+version: '3'
+services:
+  caas:
+    build: .
+    container_name: caas
+    restart: always
+    environment:
+      MODE: development
+    ports:
+      - "8580:8580"
+      - "8589:8589"
+    volumes:
+      - ./conf:/app/conf
+      - ./logs:/app/logs
+networks:
+  default:
+    external:
+      name: di_dev_network
+
