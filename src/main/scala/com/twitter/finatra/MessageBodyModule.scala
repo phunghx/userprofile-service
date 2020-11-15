@@ -3,7 +3,7 @@ package com.twitter.finatra
 import com.twitter.finatra.http.internal.marshalling.DefaultMessageBodyReaderImpl
 import com.twitter.finatra.http.marshalling.{DefaultMessageBodyReader, DefaultMessageBodyWriter}
 import com.twitter.inject.{InjectorModule, TwitterModule}
-import datainsider.user_profile.module.CustomResponseWriterImpl
+import tf.user_profile.module.CustomResponseWriterImpl
 
 object MessageBodyModule extends TwitterModule {
 
