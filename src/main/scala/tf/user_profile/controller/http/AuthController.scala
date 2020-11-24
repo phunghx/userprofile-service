@@ -6,13 +6,13 @@ import com.twitter.finagle.http.{Cookie, Request}
 import com.twitter.finatra.http.Controller
 import com.twitter.inject.Logging
 import com.twitter.util.{Duration, Future}
-import datainsider.user_profile.controller.http.filter.email.EmailMustExistFilter
+import tf.user_profile.controller.http.filter.email.EmailMustExistFilter
 import tf.user_profile.controller.http.filter.parser.DataRequestContext._
-import datainsider.user_profile.controller.http.filter.parser._
+import tf.user_profile.controller.http.filter.parser._
 import tf.user_profile.controller.http.filter.user.UserContext._
-import datainsider.user_profile.domain.request.SendCodeToEmailBodyRequest
-import datainsider.user_profile.exception.NotFoundError
-import datainsider.user_profile.service.AuthService
+import tf.user_profile.domain.request.SendCodeToEmailBodyRequest
+import tf.user_profile.exception.NotFoundError
+import tf.user_profile.service.AuthService
 import javax.inject.Inject
 import tf.user_profile.controller.http.filter.common.SessionFilter
 import tf.user_profile.controller.http.filter.email.{EmailMustExistFilter, EmailShouldNotExistFilter}

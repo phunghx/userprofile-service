@@ -1,4 +1,4 @@
-#@namespace scala datainsider.user_profile.domain.thrift
+#@namespace scala tf.user_profile.domain.thrift
 
 struct TSessionInfo {
     1:required string key

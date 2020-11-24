@@ -5,10 +5,10 @@ import java.util.concurrent.atomic.AtomicInteger
 
 import com.twitter.inject.Logging
 import com.twitter.util.Future
-import datainsider.user_profile.controller.http.filter.parser.EditUserSettingRequest
+import tf.user_profile.controller.http.filter.parser.EditUserSettingRequest
 import tf.user_profile.domain.Implicits._
-import datainsider.user_profile.domain.profile.UserProfile
-import datainsider.user_profile.util.ZConfig
+import tf.user_profile.domain.profile.UserProfile
+import tf.user_profile.util.ZConfig
 import org.nutz.ssdb4j.spi.SSDB
 import tf.user_profile.controller.http.filter.parser.{EditUserProfileRequest, EditUserSettingRequest}
 import tf.user_profile.domain.Pageable

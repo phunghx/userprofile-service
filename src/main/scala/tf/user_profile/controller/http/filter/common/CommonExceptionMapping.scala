@@ -7,7 +7,7 @@ import com.twitter.finatra.http.exceptions.ExceptionMapper
 import com.twitter.finatra.http.response.ResponseBuilder
 import com.twitter.finatra.jackson.caseclass.exceptions.CaseClassMappingException
 import com.twitter.inject.Logging
-import datainsider.user_profile.module.ApiError
+import tf.user_profile.module.ApiError
 import javax.inject.Inject
 import tf.user_profile.exception.XedException
 import tf.user_profile.module.ApiError

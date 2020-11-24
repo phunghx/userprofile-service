@@ -4,8 +4,8 @@ import com.twitter.finagle.http.{Request, Response}
 import com.twitter.finagle.{Service, SimpleFilter}
 import com.twitter.util.Future
 import tf.user_profile.domain.Implicits._
-import datainsider.user_profile.repository.FacebookOAuthRepository
-import datainsider.user_profile.util.{Configs, JsonParser, Utils}
+import tf.user_profile.repository.FacebookOAuthRepository
+import tf.user_profile.util.{Configs, JsonParser, Utils}
 import javax.inject.Inject
 import tf.user_profile.domain.request.UserOAuthBodyRequest
 import tf.user_profile.exception.RegistrationRequiredError

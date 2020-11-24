@@ -1,7 +1,7 @@
 package tf.user_profile.domain
 
 import com.twitter.util.{Future, FuturePool}
-import datainsider.user_profile.domain.profile.UserProfile
+import tf.user_profile.domain.profile.UserProfile
 import tf.user_profile.domain.profile.UserProfile
 import tf.user_profile.repository.OAuthRepository
 import user_caas.domain.thrift.Constants

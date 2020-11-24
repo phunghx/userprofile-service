@@ -5,9 +5,9 @@ import java.util.UUID
 import com.twitter.inject.Logging
 import com.twitter.util.{Future, Return, Throw}
 import tf.user_profile.domain.Implicits._
-import datainsider.user_profile.exception.QuotaExceedError
+import tf.user_profile.exception.QuotaExceedError
 import tf.user_profile.repository.SSDBKeyValueRepository.KeyValueRepositoryAsync
-import datainsider.user_profile.util.ZConfig
+import tf.user_profile.util.ZConfig
 import tf.user_profile.domain.profile.VerifyCodeInfo
 import tf.user_profile.exception.{InternalError, QuotaExceedError, VerificationCodeInvalidError}
 import tf.user_profile.repository.KeyValueRepository

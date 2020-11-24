@@ -8,8 +8,8 @@ import com.twitter.scrooge.{Request, Response}
 import com.twitter.util.Future
 import tf.user_profile.domain.Implicits._
 import tf.user_profile.domain.ThriftImplicit._
-import datainsider.user_profile.service.AuthService
-import datainsider.user_profile.domain.thrift._
+import tf.user_profile.service.AuthService
+import tf.user_profile.domain.thrift._
 import tf.user_profile.domain.Pageable
 import tf.user_profile.service.TUserProfileService._
 import tf.user_profile.domain.profile.UserAuthInfoResponse

@@ -2,13 +2,13 @@ package tf.user_profile.service
 
 import com.twitter.inject.Logging
 import com.twitter.util.{Future, Return, Throw}
-import datainsider.user_profile.controller.http.filter.parser.LoginOAuthRequest
+import tf.user_profile.controller.http.filter.parser.LoginOAuthRequest
 import tf.user_profile.domain.Implicits._
 import tf.user_profile.domain.ThriftImplicit._
-import datainsider.user_profile.domain.profile._
-import datainsider.user_profile.domain.request.LoginByEmailRequest
-import datainsider.user_profile.exception._
-import datainsider.user_profile.util.ZConfig
+import tf.user_profile.domain.profile._
+import tf.user_profile.domain.request.LoginByEmailRequest
+import tf.user_profile.exception._
+import tf.user_profile.util.ZConfig
 import javax.inject.Inject
 import tf.user_profile.controller.http.filter.parser.{LoginOAuthRequest, ResetPasswordRequest, UserRegisterRequest}
 import tf.user_profile.domain.profile.{SessionInfo, UserAuthInfoResponse, UserFullInfo, UserInfo, UserProfile}

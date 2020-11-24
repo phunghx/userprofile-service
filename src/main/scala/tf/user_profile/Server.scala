@@ -8,9 +8,9 @@ import com.twitter.finatra.http.filters.{CommonFilters, ExceptionMappingFilter}
 import com.twitter.finatra.http.routing.HttpRouter
 import com.twitter.finatra.thrift.ThriftServer
 import com.twitter.finatra.thrift.routing.ThriftRouter
-import datainsider.user_profile.controller.http.filter.common.CORSFilter
-import datainsider.user_profile.controller.http.UserController
-import datainsider.user_profile.module.UserProfileModule
+import tf.user_profile.controller.http.filter.common.CORSFilter
+import tf.user_profile.controller.http.UserController
+import tf.user_profile.module.UserProfileModule
 import tf.user_profile.controller.http.filter.common.{CORSFilter, CaseClassExceptionMapping, CommonExceptionMapping, JsonParseExceptionMapping}
 import tf.user_profile.controller.http.{AuthController, PingController, UserController}
 import tf.user_profile.controller.http.filter.user.AuthUserParser

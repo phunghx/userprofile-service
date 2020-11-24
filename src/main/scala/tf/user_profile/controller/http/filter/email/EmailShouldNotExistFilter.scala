@@ -4,7 +4,7 @@ import com.twitter.finagle.http.{Request, Response}
 import com.twitter.finagle.{Service, SimpleFilter}
 import com.twitter.util.Future
 import tf.user_profile.controller.http.filter.parser.DataRequestContext._
-import datainsider.user_profile.exception.EmailNotExistedError
+import tf.user_profile.exception.EmailNotExistedError
 import javax.inject.Inject
 import tf.user_profile.exception.{EmailExistedError, EmailNotExistedError}
 import tf.user_profile.service.UserProfileService

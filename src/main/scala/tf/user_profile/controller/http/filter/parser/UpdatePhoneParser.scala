@@ -4,7 +4,7 @@ import com.twitter.finagle.http.{Request, Response}
 import com.twitter.finagle.{Service, SimpleFilter}
 import com.twitter.inject.Logging
 import com.twitter.util.Future
-import datainsider.user_profile.util.JsonParser
+import tf.user_profile.util.JsonParser
 import javax.inject.Inject
 import tf.user_profile.controller.http.filter.phone.PhoneFilterRequest
 import tf.user_profile.domain.request.UpdatePhoneBodyRequest

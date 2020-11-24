@@ -8,8 +8,8 @@ import com.twitter.finagle.{Service, SimpleFilter}
 import com.twitter.finatra.validation.NotEmpty
 import com.twitter.inject.Logging
 import com.twitter.util.Future
-import datainsider.user_profile.domain.profile.UserProfile
-import datainsider.user_profile.util.Utils
+import tf.user_profile.domain.profile.UserProfile
+import tf.user_profile.util.Utils
 import javax.inject.Inject
 import tf.user_profile.controller.http.filter.email.EmailFilterRequest
 import tf.user_profile.domain.profile.UserProfile

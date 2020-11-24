@@ -5,11 +5,11 @@ import com.google.inject.{Inject, Provides, Singleton}
 import com.twitter.finagle.thrift
 import com.twitter.inject.TwitterModule
 import tf.user_profile.repository.SSDBKeyValueRepository.KeyValueRepositoryAsync
-import datainsider.user_profile.repository.TokenCodeRepository
-import datainsider.user_profile.service.accountkit.ConfirmData
-import datainsider.user_profile.service.verification.EmailChannelService
-import datainsider.user_profile.service._
-import datainsider.user_profile.util.ZConfig
+import tf.user_profile.repository.TokenCodeRepository
+import tf.user_profile.service.accountkit.ConfirmData
+import tf.user_profile.service.verification.EmailChannelService
+import tf.user_profile.service._
+import tf.user_profile.util.ZConfig
 import org.nutz.ssdb4j.SSDBs
 import org.nutz.ssdb4j.spi.SSDB
 import tf.user_profile.repository.{KeyValueRepository, QuotaRepository, TokenCodeRepository, UserProfileRepository, UserProfileRepositoryImpl}

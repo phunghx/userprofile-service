@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.JsonNode
 import com.twitter.inject.Logging
 import com.twitter.util.Future
 import tf.user_profile.domain.Implicits._
-import datainsider.user_profile.util.ZConfig
+import tf.user_profile.util.ZConfig
 import scalaj.http.Http
 import tf.user_profile.util.{JsonParser, ZConfig}
 

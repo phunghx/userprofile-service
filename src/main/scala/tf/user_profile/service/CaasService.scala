@@ -4,7 +4,7 @@ import com.twitter.inject.Logging
 import com.twitter.util.Future
 import tf.user_profile.domain.Implicits._
 import tf.user_profile.domain.ThriftImplicit._
-import datainsider.user_profile.domain.profile.UserInfoPageable
+import tf.user_profile.domain.profile.UserInfoPageable
 import javax.inject.Inject
 import tf.user_profile.domain.Pageable
 import tf.user_profile.domain.profile.{Roles, UserInfoPageable}

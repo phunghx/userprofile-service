@@ -3,10 +3,10 @@ package tf.user_profile.controller.http
 import com.twitter.finagle.http.Request
 import com.twitter.finatra.http.Controller
 import com.twitter.inject.Logging
-import datainsider.user_profile.controller.http.filter.parser.MultiGetUserProfileRequest
+import tf.user_profile.controller.http.filter.parser.MultiGetUserProfileRequest
 import tf.user_profile.controller.http.filter.user.UserContext._
-import datainsider.user_profile.controller.http.filter.user.UserSignedInFilter
-import datainsider.user_profile.service.{AuthorizationService, UserProfileService}
+import tf.user_profile.controller.http.filter.user.UserSignedInFilter
+import tf.user_profile.service.{AuthorizationService, UserProfileService}
 import javax.inject.Inject
 import tf.user_profile.controller.http.filter.parser.{EditUserProfileRequest, EditUserSettingRequest, MultiGetUserProfileRequest}
 import tf.user_profile.controller.http.filter.user.{AdminRoleFilter, UserSignedInFilter}

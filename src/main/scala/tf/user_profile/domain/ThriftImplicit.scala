@@ -1,8 +1,8 @@
 package tf.user_profile.domain
 
 import com.twitter.scrooge.{Response, ThriftStruct}
-import datainsider.user_profile.domain.profile.UserInfo
-import datainsider.user_profile.domain.thrift.TSessionInfo
+import tf.user_profile.domain.profile.UserInfo
+import tf.user_profile.domain.thrift.TSessionInfo
 import tf.user_profile.domain.profile.{SessionInfo, UserInfo, UserProfile}
 import tf.user_profile.domain.thrift.{TSessionInfo, TUserInfo, TUserProfile}
 

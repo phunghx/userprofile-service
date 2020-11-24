@@ -1,4 +1,4 @@
-#@namespace scala datainsider.user_profile.service
+#@namespace scala tf.user_profile.service
 include "UserProfileDT.thrift"
 
 service TUserProfileService {

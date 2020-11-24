@@ -14,7 +14,7 @@
         <scala.version>2.11.11</scala.version>
         <finatra.version>20.4.1</finatra.version>
         <kafka.version>2.5.0</kafka.version>
-        <mainClass>datainsider.user_profile.MainApp</mainClass>
+        <mainClass>tf.user_profile.MainApp</mainClass>
     </properties>
     <dependencies>
         <dependency>

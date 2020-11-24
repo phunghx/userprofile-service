@@ -1,6 +1,6 @@
 package tf.user_profile.domain.response
 
-import datainsider.user_profile.domain.profile.UserInfo
+import tf.user_profile.domain.profile.UserInfo
 import tf.user_profile.domain.profile.{SessionInfo, UserInfo, UserProfile}
 
 /**

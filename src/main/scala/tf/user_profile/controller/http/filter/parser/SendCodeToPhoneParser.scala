@@ -3,8 +3,8 @@ package tf.user_profile.controller.http.filter.parser
 import com.twitter.finagle.http.{Request, Response}
 import com.twitter.finagle.{Service, SimpleFilter}
 import com.twitter.util.Future
-import datainsider.user_profile.controller.http.filter.phone.PhoneQuotaFilterRequest
-import datainsider.user_profile.util.{JsonParser, Utils}
+import tf.user_profile.controller.http.filter.phone.PhoneQuotaFilterRequest
+import tf.user_profile.util.{JsonParser, Utils}
 import tf.user_profile.controller.http.filter.phone.{PhoneFilterRequest, PhoneQuotaFilterRequest}
 import tf.user_profile.domain.request.SendCodeToPhoneBodyRequest
 import tf.user_profile.util.{JsonParser, Utils}

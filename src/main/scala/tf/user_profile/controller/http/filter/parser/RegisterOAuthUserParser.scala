@@ -5,8 +5,8 @@ import com.twitter.finagle.{Service, SimpleFilter}
 import com.twitter.inject.Logging
 import com.twitter.util.Future
 import tf.user_profile.domain.Implicits._
-import datainsider.user_profile.repository.FacebookOAuthRepository
-import datainsider.user_profile.util.Utils
+import tf.user_profile.repository.FacebookOAuthRepository
+import tf.user_profile.util.Utils
 import javax.inject.Inject
 import tf.user_profile.controller.http.filter.email.EmailFilterRequest
 import tf.user_profile.controller.http.filter.phone.PhoneFilterRequest
