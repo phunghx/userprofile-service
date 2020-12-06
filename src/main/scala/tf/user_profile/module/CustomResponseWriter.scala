@@ -29,7 +29,7 @@ class CustomResponseWriterImpl @Inject()(mapper: ScalaObjectMapper) extends Defa
       case a: Any =>
         marshalling.WriterResponse(
           contentType = JSON_UTF_8.toString,
-          body = mapper.writeValueAsString(a)
+          body = mapper.writeValueAsString(BaseResponse(success = true, data = Some(a), error = None))
         )
 
     }
