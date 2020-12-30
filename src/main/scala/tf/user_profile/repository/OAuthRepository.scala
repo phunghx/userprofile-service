@@ -138,7 +138,7 @@ case class FacebookOAuthRepository(facebookId: String, token: String) extends OA
   val response: Map[String, String] = try {
     // val appSecretProof = HmacUtils.hmacSha256Hex(appSecret, token)
     JSON.parseFull(
-      Http("https://graph.facebook.com/me/?access_token=${token}&fields=id,name,first_name,last_name,email")
+      Http("https://graph.facebook.com/me/?access_token=$token&fields=id,name,first_name,last_name,email")
         .timeout(5000, 10000)
         .asString
         .body
