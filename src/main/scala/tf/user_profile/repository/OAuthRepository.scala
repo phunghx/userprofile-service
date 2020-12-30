@@ -137,6 +137,7 @@ case class FacebookOAuthRepository(facebookId: String, token: String) extends OA
 
   val response: Map[String, String] = try {
     val appSecretProof = HmacUtils.hmacSha256Hex(appSecret, token)
+    println("https://graph.facebook.com/me/?access_token=$token&appsecret_proof=$appSecretProof&fields=id,name,first_name,last_name,email")
     JSON.parseFull(
       Http(s"https://graph.facebook.com/me/?access_token=$token&appsecret_proof=$appSecretProof&fields=id,name,first_name,last_name,email")
         .timeout(5000, 10000)
@@ -144,11 +145,11 @@ case class FacebookOAuthRepository(facebookId: String, token: String) extends OA
         .body
     ) match {
       case Some(s: Map[String, String]) => s
-      case _ => throw new InternalError("Error when getting facebook info https://graph.facebook.com/me/?access_token=$token&appsecret_proof=$appSecretProof&fields=id,name,first_name,last_name,email")
+      case _ => throw new InternalError("Error when getting facebook info")
     }
   } catch {
     case e: SocketTimeoutException => throw new SocketTimeoutException("Timeout when getting facebook info")
-    case e: Exception => throw new Exception("Error when getting facebook info https://graph.facebook.com/me/?access_token=$token&appsecret_proof=$appSecretProof&fields=id,name,first_name,last_name,email")
+    case e: Exception => throw new Exception("Error when getting facebook info")
   }
   val id = response.get("id") match {
     case Some(s) => s.toString
