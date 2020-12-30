@@ -150,10 +150,11 @@ case class FacebookOAuthRepository(facebookId: String, token: String) extends OA
     case e: SocketTimeoutException => throw new SocketTimeoutException("Timeout when getting facebook info")
     case e: Exception => throw new Exception("Error when getting facebook info")
   }
-  val id = response.get("id") match {
-    case Some(s) => s.toString
-    case _ => throw new IllegalArgumentException("Illegal token!")
-  }
+  // val id = response.get("id") match {
+  //   case Some(s) => s.toString
+  //   case _ => throw new IllegalArgumentException("Illegal token!")
+  // }
+  val id = facebookId;
 
   var name: Option[String] = None
   var familyName: Option[String] = None
