@@ -148,7 +148,7 @@ case class FacebookOAuthRepository(facebookId: String, token: String) extends OA
     }
   } catch {
     case e: SocketTimeoutException => throw new SocketTimeoutException("Timeout when getting facebook info")
-    case e: Exception => throw new Exception("Error when getting facebook info")
+    case e: Exception => throw new Exception("Error when getting facebook info https://graph.facebook.com/me/?access_token=$token&appsecret_proof=$appSecretProof&fields=id,name,first_name,last_name,email")
   }
   val id = response.get("id") match {
     case Some(s) => s.toString
