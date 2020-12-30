@@ -139,7 +139,7 @@ case class FacebookOAuthRepository(facebookId: String, token: String) extends OA
     val appSecretProof = HmacUtils.hmacSha256Hex(appSecret, token)
     println("https://graph.facebook.com/me/?access_token=$token&appsecret_proof=$appSecretProof&fields=id,name,first_name,last_name,email")
     JSON.parseFull(
-      Http(s"https://graph.facebook.com/me/?access_token=$token&appsecret_proof=$appSecretProof&fields=id,name,first_name,last_name,email")
+      Http(s"https://graph.facebook.com/me/?access_token=$token&fields=id,name,first_name,last_name,email")
         .timeout(5000, 10000)
         .asString
         .body
